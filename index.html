@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div id="container" style="width:100%; height:100%;"></div>
+  <div id="container"></div>
 
   <script> 
     $(document).ready(function(){
@@ -26,7 +26,11 @@
         { text: 'hiyo', weight: 3},
       ];
 
-      $('#container').jQCloud(words);   
+      $('#container').jQCloud(words,{
+        height: 400,
+        autoResize: true,
+        fontSize: { from: 0.1, to: 0.01 }
+      });   
     });
    
   </script>
