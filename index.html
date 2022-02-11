@@ -11,6 +11,10 @@
 <script src="/jqcloud.min.js"></script>
 
 <link rel="stylesheet" href="/jqcloud.min.css">
+  
+<style>
+  html, body { height: 100%; }
+</style>
 
 </head>
 
@@ -27,7 +31,6 @@
       ];
 
       $('#container').jQCloud(words,{
-        height: 400,
         autoResize: true,
         fontSize: { from: 0.1, to: 0.01 }
       });   
