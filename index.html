@@ -12,44 +12,48 @@
 
     gtag('config', 'G-VG2RE6XVCH');
   </script>
-
   <meta charset="UTF-8">
+  <title>Hello!</title>
 
-  <title>ghdl023.info</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="/jqcloud.min.js"></script>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/jqcloud/jqcloud.min.css">
+  <link rel="stylesheet" href="/css/tippy/tippy.css">
+  <link rel="stylesheet" href="/css/tippy/scale.css">
 
-  <link rel="stylesheet" href="/jqcloud.min.css">
+  <!-- jquery -->
+  <script src="/js/jquery/jquery.min.js"></script>
+
+  <!-- jqcloud -->
+  <script src="/js/jqcloud/jqcloud.min.js"></script>
+
+  <!-- tooltip -->
+  <script src="/js/tippy/popper.min.js"></script>
+  <script src="/js/tippy/tippy-bundle.umd.min.js"></script>
 
   <style>
     html, body { height: 100%; }
+
+    body {
+      background-color: dodgerblue;
+    }
+
+    .jqcloud-word {
+      color:white;
+      cursor:pointer;
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+      user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    }
   </style>
 
 </head>
 
 <body>
   <div id="container" style="height:100%"></div>
-
-  <script> 
-    $(document).ready(function(){
-      console.log("Ready!");
-      var words = [
-        { text: 'ISFP', weight: 8},
-        { text: '안양대학교', weight: 2},
-        { text: '취미', weight: 3},
-        { text: 'danbee.ai', weight: 10},
-        { text: '롤(League of Legends)', weight: 6},
-        { text: '스타크래프트', weight: 4},
-        { text: '경력', weight: 5},
-      ];
-
-      $('#container').jQCloud(words,{
-        autoResize: true,
-        fontSize: { from: 0.1, to: 0.01 }
-      });   
-    });
-   
-  </script>
-
+  <script src="/js/index.js"></script>
 </body>
 </html>
